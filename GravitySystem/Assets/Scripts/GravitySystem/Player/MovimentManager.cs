@@ -56,6 +56,10 @@ public class MovimentManager : MonoBehaviour{
         return axisDir;
     }
 
+    public Vector3 ActualDirection() {
+        return leftStickDirection;
+    }
+
     //InputSystem
     #region InputSystem
     public void RightStick(Vector2 stickValue){

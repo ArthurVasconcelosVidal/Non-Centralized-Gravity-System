@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour{
     public FauxGravity fauxGravity;
     public InputManager inputManager;
     public MovimentManager movimentManager;
+    public ActionManager actionManager;
     public CameraManager cameraManager;
     public GameObject meshObject; //inspector
     public GameObject mainCamera; //inspector

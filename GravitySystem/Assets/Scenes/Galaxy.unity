@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 686185434}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: gravityObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1002,6 +1002,7 @@ GameObject:
   - component: {fileID: 1268865800}
   - component: {fileID: 1268865803}
   - component: {fileID: 1268865804}
+  - component: {fileID: 1268865805}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1031,7 +1032,7 @@ MonoBehaviour:
   gravityUser: {fileID: 0}
   planetReference: {fileID: 608622766}
   groundDistanceOffset: 0
-  rotationInterpolation: 0.01
+  rotationInterpolation: 0.05
   applyGravity: 1
   applyRotation: 1
   canChangePlanets: 0
@@ -1131,6 +1132,7 @@ MonoBehaviour:
   fauxGravity: {fileID: 1268865795}
   inputManager: {fileID: 1268865800}
   movimentManager: {fileID: 1268865803}
+  actionManager: {fileID: 1268865805}
   cameraManager: {fileID: 1268865804}
   meshObject: {fileID: 1664649064}
   mainCamera: {fileID: 2115512543}
@@ -1194,6 +1196,19 @@ MonoBehaviour:
   freeLookCM: {fileID: 1014881634}
   camSpeedY: 1
   camSpeedX: 80
+--- !u!114 &1268865805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268865794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196aa9f6767085844afc8a7a67575323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 20
 --- !u!4 &1430136264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 539745478100655087, guid: bd6ee82c5e06b3f4f86113cbf8261ae1, type: 3}

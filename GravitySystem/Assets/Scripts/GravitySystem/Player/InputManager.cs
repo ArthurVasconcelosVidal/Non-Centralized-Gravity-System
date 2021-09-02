@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour{
     public Vector2 rightStick; //TESTE
 
     public void OnSouthButton(){
-        print("Jump");
+        PlayerManager.instance.actionManager.Jump();
     }
 
     public void OnRightStick(InputValue inputValue){

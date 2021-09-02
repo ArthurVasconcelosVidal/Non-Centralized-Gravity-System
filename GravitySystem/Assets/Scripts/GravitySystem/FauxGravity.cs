@@ -137,19 +137,11 @@ public class FauxGravity : MonoBehaviour {
                 gameObject_rb.MoveRotation(Quaternion.Slerp(transform.rotation, gravityRotation, rotationInterpolation));
             }
         }
-        /*
-        if (applyRotation){
-            gravityRotation = Quaternion.FromToRotation(transform.up, gravityHit) * transform.rotation;
-            gameObject_rb.MoveRotation(Quaternion.Slerp(transform.rotation, gravityRotation, rotationInterpolation));
-        }*/
     }
 
     void GravityForceApplication() {
         if (applyGravity) {
-            //gravityForceDirection = Vector3.Lerp(-transform.up, -gravityHit, directionInterpolation);
             gravityForceDirection = -gravityHit;
-            //gravityForceDirection = -transform.up.normalized;
-            Debug.DrawRay(transform.position, gravityForceDirection * 10, Color.blue);
             gravityForceDirection = gravityForceDirection * magnitudeForce;
             gameObject_rb.AddForce(gravityForceDirection);
         }
