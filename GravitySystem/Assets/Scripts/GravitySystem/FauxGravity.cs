@@ -124,8 +124,6 @@ public class FauxGravity : MonoBehaviour {
     }
 
     void GravityRotation() {
-        //Modification 02/12/2020 test in pogress
-        //Work perfectly
         if (applyRotation) {
             RaycastHit hit;
             if (Physics.Raycast(transform.position, -transform.up.normalized, out hit, distToGround + groundDistanceOffset, gravity_Layer)) {
