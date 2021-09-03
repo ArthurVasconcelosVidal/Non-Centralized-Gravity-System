@@ -14,7 +14,7 @@ public class MovimentManager : MonoBehaviour{
     [SerializeField] bool useCamera = true; //Utilitario
     #endregion
 
-    void Update(){
+    void FixedUpdate(){
         leftStick = PlayerManager.instance.inputManager.leftStick;
         Movimentation();
     }

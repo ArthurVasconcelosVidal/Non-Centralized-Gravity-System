@@ -1813,7 +1813,7 @@ MonoBehaviour:
   gravityUser: {fileID: 0}
   planetReference: {fileID: 608622766}
   groundDistanceOffset: 0
-  rotationInterpolation: 0.01
+  rotationInterpolation: 0.02
   applyGravity: 1
   applyRotation: 1
   canChangePlanets: 1
@@ -1961,8 +1961,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef7fc4d8c85313488165549830952fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
-  rotationSpeed: 10
+  moveSpeed: 10
+  rotationSpeed: 20
   useCamera: 1
 --- !u!114 &1268865804
 MonoBehaviour:
