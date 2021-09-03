@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour{
     public MovimentManager movimentManager;
     public ActionManager actionManager;
     public CameraManager cameraManager;
+    public AnimationManager animationManager;
     public GameObject meshObject; //inspector
     public GameObject mainCamera; //inspector
 

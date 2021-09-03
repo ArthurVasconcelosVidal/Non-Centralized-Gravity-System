@@ -23,7 +23,7 @@ public class @AcationInputs : IInputActionCollection, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""00dcb54c-3960-4f8b-9181-3bd5db8bce45"",
                     ""expectedControlType"": ""Stick"",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone(min=0.2,max=1)"",
                     ""interactions"": """"
                 },
                 {
@@ -31,7 +31,7 @@ public class @AcationInputs : IInputActionCollection, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""6c6269c3-4fc2-4901-9567-8dd314a4d8f8"",
                     ""expectedControlType"": ""Stick"",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone(min=0.2,max=1)"",
                     ""interactions"": """"
                 },
                 {

@@ -31,9 +31,12 @@ public class MovimentManager : MonoBehaviour{
         rightStickDirection = (transform.forward * rightStick.y + transform.right * rightStick.x);
 
         //Movimentar
-        if (leftStickDirection != Vector3.zero) {
-            PlayerManager.instance.rigidyBody.MovePosition(PlayerManager.instance.rigidyBody.position + leftStickDirection * moveSpeed * Time.fixedDeltaTime); 
+        if (leftStickDirection != Vector3.zero)
+        {
+            PlayerManager.instance.rigidyBody.MovePosition(PlayerManager.instance.rigidyBody.position + leftStickDirection * moveSpeed * Time.fixedDeltaTime);
+            PlayerManager.instance.animationManager.SetRunningAnim(leftStickDirection.magnitude);
         }
+        else PlayerManager.instance.animationManager.SetRunningAnim(0);
 
         //Rotacionar o personagem
         if (rightStickDirection != Vector3.zero)

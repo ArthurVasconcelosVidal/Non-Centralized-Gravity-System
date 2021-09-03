@@ -55,13 +55,7 @@ public class FauxGravity : MonoBehaviour {
         }
 
     }
-    /*
-         void Update() {
-        NewGravityRay();
-        GravityRotation();
-        GravityForceApplication();
-    }
-     */
+
     void FixedUpdate(){
         NewGravityRay();
         GravityRotation();
@@ -73,7 +67,6 @@ public class FauxGravity : MonoBehaviour {
     void NewGravityRay() {
         if (useClosestPoint) {
             rayDirection = planetReference.GetComponent<MeshTrianglePoints>().NearestTriangleCenter(transform.position);
-            //rayDirection = planetReference.GetComponent<Collider>().ClosestPoint(transform.position);
             rayDirection = rayDirection - transform.position;
         }
         else {
@@ -98,7 +91,6 @@ public class FauxGravity : MonoBehaviour {
             planetReference = newPlanet;
         }
     }
-
 
     void ClearPreviousPlanet() {
         auxPlanetReference = null;
