@@ -19,9 +19,11 @@ public class ActionManager : MonoBehaviour{
         inJump = true;
         if (PlayerManager.instance.movimentManager.ActualDirection() != Vector3.zero) PlayerManager.instance.rigidyBody.AddForce((transform.up + PlayerManager.instance.movimentManager.ActualDirection()).normalized * jumpForce, ForceMode.Impulse);
         else PlayerManager.instance.rigidyBody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        PlayerManager.instance.animationManager.CallJump(true);
         yield return new WaitForSeconds(0.3f);
         yield return new WaitUntil(() => PlayerManager.instance.fauxGravity.IsGrounded());
         inJump = false;
+        PlayerManager.instance.animationManager.CallJump(false);
     }
     #endregion
 
