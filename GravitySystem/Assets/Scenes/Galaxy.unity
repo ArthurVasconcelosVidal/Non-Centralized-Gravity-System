@@ -1813,7 +1813,7 @@ MonoBehaviour:
   gravityUser: {fileID: 0}
   planetReference: {fileID: 608622766}
   groundDistanceOffset: 0
-  rotationInterpolation: 0.05
+  rotationInterpolation: 0.01
   applyGravity: 1
   applyRotation: 1
   canChangePlanets: 1

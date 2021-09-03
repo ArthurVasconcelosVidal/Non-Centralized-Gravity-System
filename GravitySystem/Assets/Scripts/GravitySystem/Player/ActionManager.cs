@@ -22,8 +22,8 @@ public class ActionManager : MonoBehaviour{
         PlayerManager.instance.animationManager.CallJump(true);
         yield return new WaitForSeconds(0.3f);
         yield return new WaitUntil(() => PlayerManager.instance.fauxGravity.IsGrounded());
-        inJump = false;
         PlayerManager.instance.animationManager.CallJump(false);
+        inJump = false;
     }
     #endregion
 

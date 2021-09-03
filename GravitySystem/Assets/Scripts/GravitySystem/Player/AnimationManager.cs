@@ -7,10 +7,10 @@ public class AnimationManager : MonoBehaviour{
 
     public void CallJump(bool state) {
         animator.SetBool("Jump", state);
+
     }
     public void SetRunningAnim(float magnitude) {
         animator.SetFloat("Velocity", magnitude);
-        //animator.blend
     }    
     
 }
