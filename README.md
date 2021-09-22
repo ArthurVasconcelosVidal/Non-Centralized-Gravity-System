@@ -19,7 +19,7 @@ The gravity system works on any object of any shape, without the need for a cohe
 ###### Features:
 
   - **Non-centered gravity system:** Gravity uses the centers of the quadrants of a 3D mesh to identify the closest point to the character and apply gravity
-  - **Cinemachine:** Implemented the unit's camera module (Cinemachine) with the appropriate camera settings for the player
+  - **Cinemachine:** Implemented the Unity camera module (Cinemachine) with the appropriate camera settings for the player
   - **Camera-related movement:** Player changes are related to the position of the camera on the screen, making it impossible to get lost in the movement
   - **Transition between planets:** It is possible to transition between planets using the planet's gravitational fields (Trigger Colliders)
 
