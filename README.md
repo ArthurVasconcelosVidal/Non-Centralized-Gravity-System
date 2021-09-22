@@ -33,5 +33,5 @@ The gravity system works on any object of any shape, without the need for a cohe
 https://github.com/viliwonka/KDTree
 - wwwtyro (Skybox):
 https://github.com/wwwtyro/space-3d
-- Mix & Jam (Character):
+- Mix & Jam (Character model/Animations):
 https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456
